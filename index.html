@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--Mengundang file CSS untuk mengatur tampilan dan gaya pada elemen HTML-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="navbar"><h2 style="padding: 10px;">KALKULATOR PERSEGI</h2> 
+    </div>
+
+    <!--Mengundang class kotak untuk mengatur gaya dan tampilan pada kotak form-->
+    <div class="kotak">
+
+    <center>
+        <h3> MENGHITUNG LUAS PERSEGI </h3>
+
+    <!-- Menampilkan gambar persegi -->
+    <img src="persegi.png" alt="persegi" class="img">
+    <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"> Rumus : <br>
+     Luas : S x S <br>
+     S : Sisi
+    </p>
+
+        <form id="calculate-form">
+            <!-- Input form untuk menghitung luas -->
+            <label for="sisi-luas">Hitung Luas Persegi :</label>
+            <input type="number" id="sisi-luas" name="sisi-luas" class="label">
+           
+            <!-- Tombol untuk menghitung luas -->
+            <button type="button" id="hitung-luas" onclick="hitungLuas()">Hitung</button>
+            <br><br>
+
+            <!-- Output untuk menampilkan hasil -->
+            <div id="output-luas"></div>
+            <br>
+
+           
+        
+    </center>
+    </div>     
+     
+    <!--Mengundang class kotak untuk mengatur gaya dan tampilan pada kotak form-->
+    <div class="kotak">
+        <center>
+        <h3> MENGHITUNG KELILING PERSEGI </h3>
+
+        <!-- Menampilkan gambar persegi-->
+        <img src="persegi.png" alt="persegi" class="img">
+        <p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"> Rumus : <br>
+         Keliling : 4 x S <br>
+         S : Sisi
+        </p>
+
+        <!-- Input form untuk menghitung keliling -->
+        <label for="sisi-keliling">Hitung Keliling Persegi :</label>
+        <input type="number" id="sisi-keliling" name="sisi-keliling" class="label">
+      
+        <!-- Tombol untuk menghitung keliling -->
+        <button type="button" id="hitung-keliling" onclick="hitungKeliling()">Hitung</button>
+        <br><br>
+          
+        <!-- Output untuk menampilkan hasil -->
+        <div id="output-keliling"></div><br>
+          
+        <!-- Tombol reset -->
+        <button type="reset" onclick="resetForm()" style="background-color: yellow; color: black; height: auto;">Reset Semua</button>
+      </form>    
+    </center>
+    </div>
+    <!--Mengundang fungsi pada file JavaScript-->
+      <script src="script.js"></script>
+</body>
+</html>
